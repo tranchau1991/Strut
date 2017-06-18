@@ -14,3 +14,5 @@
 .buildpath
 .tern-port
 
+/nbproject/private/
+/node_modules/
