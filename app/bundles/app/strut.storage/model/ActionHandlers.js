@@ -25,6 +25,12 @@ function() {
 					});
 				});
 		},
+                log_in: function(){
+                    alert("login");
+                },
+                log_out: function(){
+                    alert("log_out");
+                },
 
 		new_: function(model) {
 			model.newPresentation();

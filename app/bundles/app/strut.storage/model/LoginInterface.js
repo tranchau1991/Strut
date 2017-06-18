@@ -1,14 +1,14 @@
 define(['tantaman/web/storage/StorageProvidersWrapper'],
-function(StorageProviders) {
+function(LoginProviders) {
 	'use strict';
 
 	// TODO: update to use ServiceCollection
 	// remove presentation specific garbage
-	function StorageInterface(registry) {
-		this._providers = new StorageProviders(registry);
+	function LoginInterface(registry) {
+		this._providers = new LoginProviders(registry);
 	}
 
-	StorageInterface.prototype = {
+	LoginInterface.prototype = {
 		providerNames: function() {
 			return this._providers.providerNames();
 		},
@@ -91,5 +91,5 @@ function(StorageProviders) {
 		}
 	};
 
-	return StorageInterface;
+	return LoginInterface;
 });

@@ -9,6 +9,8 @@ define({
 	open: 'Open',
 	save: 'Save',
 	save_as: 'Save as...',
+	log_in: 'Login',
+	log_out: 'Log Out',
 	new_: 'New',
 	text: 'Text',
 	image: 'Image',
