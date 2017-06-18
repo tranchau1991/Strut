@@ -2,10 +2,13 @@ define(
 function() {
 	return {
 		save: function(storageInterface, model, filename, cb) {
+                        //save data
 			storageInterface.savePresentation(filename, model.exportPresentation(filename), cb);
+                        
 		},
 
 		open: function(storageInterface, model, filename, cb) {
+                        //open data
 			storageInterface.savePresentation(
 				model.fileName(),
 				model.exportPresentation(model.fileName()),

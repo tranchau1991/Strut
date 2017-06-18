@@ -70,6 +70,10 @@ function(StorageProviders) {
 			window.sessionMeta.lastPresentation = identifier;
 
 			this.store(identifier, data, cb);
+                        console.log("savePresentation");
+                        //console.log(identifier);
+                        console.log(JSON.stringify(data));
+                        //console.log(cb);
 		}
 	};
 
